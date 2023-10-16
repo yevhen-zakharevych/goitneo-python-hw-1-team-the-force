@@ -1,6 +1,5 @@
 from collections import defaultdict
 from datetime import datetime, timedelta
-from users import generate_users_list
 
 
 def get_birthdays_per_week(users_list):
@@ -30,11 +29,3 @@ def get_birthdays_per_week(users_list):
 
     for day, names in birthdays_dict.items():
         print(f"{day}: {', '.join(names)}")
-
-
-users = generate_users_list(100)
-
-get_birthdays_per_week(users)
-
-
-
